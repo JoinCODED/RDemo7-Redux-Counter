@@ -1,0 +1,22 @@
+.App {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.component {
+  width: 350px;
+  height: 500px;
+  border: 2px solid;
+  margin: auto;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-family: menlo;
+}

@@ -1,19 +1,19 @@
+import { INCREMENT } from "../actionCreators/actionTypes";
 const initialState = {
-  counter: 0,
-  posts: []
+  counter: 0
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "INCREMENT":
+    case INCREMENT:
       return {
         ...state,
         counter: state.counter + action.payload
       };
-    case "SET_POSTS":
+    case "HEBA":
+      console.log("Heba in counter");
       return {
-        ...state,
-        posts: action.payload
+        ...state
       };
     default:
       return state;

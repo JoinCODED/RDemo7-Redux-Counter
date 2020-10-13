@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { increment } from "./redux/actionCreators";
 
 const Incrementer = props => {
+  console.log(props.posts);
   return (
     <div className="col-lg-6">
       <div className="component">
@@ -23,7 +24,8 @@ const Incrementer = props => {
 
 const mapStateToProps = state => {
   return {
-    counter: state.counter
+    counter: state.counterState.counter,
+    posts: state.postsState.posts
   };
 };
 

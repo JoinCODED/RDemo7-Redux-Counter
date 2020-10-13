@@ -18,7 +18,7 @@ const Posts = props => {
     );
 
   return (
-    <table class="table table-dark mx-auto my-4">
+    <table className="table table-dark mx-auto my-4">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -27,7 +27,7 @@ const Posts = props => {
       </thead>
       <tbody>
         {posts.map(post => (
-          <tr>
+          <tr key={post.title}>
             <th scope="row">{post.id}</th>
             <td>{post.title}</td>
           </tr>
@@ -39,7 +39,7 @@ const Posts = props => {
 
 const mapStateToProps = state => {
   return {
-    posts: state.posts
+    posts: state.postsState.posts
   };
 };
 
